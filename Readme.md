@@ -1,0 +1,1 @@
+主要实现了SurfaceView、TextureView、GPU渲染yuv数组以及GPU渲染SurfaceTexture四种渲染方式.

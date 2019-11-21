@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">camera_module</string>
+    <string name="request_camera_permission_tip">请求相机权限</string>
+</resources>

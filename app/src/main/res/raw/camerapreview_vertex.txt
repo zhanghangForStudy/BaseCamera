@@ -1,0 +1,9 @@
+attribute vec2 a_texture_coordinate;
+attribute vec4 a_position;
+varying vec2 texture_coordinate;
+uniform mat4 mvp_matrix;
+
+void main(){
+    gl_Position = mvp_matrix * a_position;
+    texture_coordinate = a_texture_coordinate;
+}

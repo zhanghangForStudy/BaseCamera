@@ -1,0 +1,12 @@
+#extension GL_OES_EGL_image_external : require
+precision mediump float;
+uniform samplerExternalOES textureOES;
+// 该矩阵来源于SurfaceTexture.getTransformMatrix方法
+uniform mat4 texture_transform_matrix;
+varying vec2 texture_coordinate;
+
+void main(){
+    vec4 coordinate = vec4(texture_coordinate, 0, 1);
+    coordinate = texture_transform_matrix * coordinate;
+    gl_FragColor = texture2D(textureOES, coordinate.xy);
+}

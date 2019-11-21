@@ -1,0 +1,2 @@
+include ':app', ':camera_module'
+rootProject.name='BaseCamera'

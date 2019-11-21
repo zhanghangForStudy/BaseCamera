@@ -1,0 +1,7 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.shuyi.camera_module">
+
+    <application>
+        <activity android:name=".common.permission.PermissionActivity" />
+    </application>
+</manifest>
